@@ -13,7 +13,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
  
 map.addOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC); 
-
+console.log('실시간 교통사항 16번째줄')
 // HTML5의 geolocation으로 사용할 수 있는지 확인합니다 
 if (navigator.geolocation) {
     

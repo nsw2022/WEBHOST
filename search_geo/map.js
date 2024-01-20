@@ -8,9 +8,12 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
         center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
         level: 5 // 지도의 확대 레벨 
     }; 
+
  
 var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
  
+map.addOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC); 
+
 // HTML5의 geolocation으로 사용할 수 있는지 확인합니다 
 if (navigator.geolocation) {
     
